@@ -1,8 +1,24 @@
 package main
 
-import "testing"
+import (
+	"testing"
+)
+
+// // define input-result struct type
+// type TestDataItem struct {
+// 	inputs   []Dog  // inputs to `Add` function
+// 	result   string // result of `Add` function
+// 	hasError bool   // does `Add` function returns error
+// }
 
 func TestAnimal(t *testing.T) {
+
+	// // input-result data items
+	// dataItems := []TestDataItem{
+	// 	{[]Dog{4}, "Bark", false},
+	// 	{[]Dog{2}, "Bark", false},
+	// }
+
 	var obj Animal
 	obj = Dog{legs: 4}
 	result := obj.Talk()
